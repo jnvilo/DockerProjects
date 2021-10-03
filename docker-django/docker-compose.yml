@@ -1,0 +1,8 @@
+version: '3'
+services:
+  django: 
+    image: harbor.lnxsystems.com/library/django:0.0.1
+    container_name: djproj
+    ports:
+      - 8000:8000
+      
