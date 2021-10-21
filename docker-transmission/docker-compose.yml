@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  transmission: 
+    image: harbor.lnxsystems.com/library/transmission:0.0.5
+    container_name: transmission
+    #volumes:
+    #- ./nginx.conf.d:/etc/nginx/conf.d
+    ports:
+      - 9091:9091

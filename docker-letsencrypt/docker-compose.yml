@@ -1,0 +1,8 @@
+version: '3'
+services:
+  letsencrypt: 
+    image: harbor.lab.demostack.xyz/library/letsencrypt:0.0.1
+    container_name: letsencypt
+    #volumes:
+    # - ./nginx.conf.d:/etc/nginx/conf.d
+      

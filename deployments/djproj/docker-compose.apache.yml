@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+
+  apache:
+    image: httpd:2.4
+    container_name: apache
+    networks:
+      - nettest
+    dns_search: .
+
+networks:
+  nettest:
+      external: true
+

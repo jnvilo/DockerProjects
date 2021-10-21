@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx: 
+    image: harbor.lab.demostack.xyz/library/labserver-proxy:0.0.8
+    container_name: labserver_proxy
+    #volumes:
+    # - ./nginx.conf.d:/etc/nginx/conf.d
+    ports:
+      - 80:80
+      - 443:443
+      

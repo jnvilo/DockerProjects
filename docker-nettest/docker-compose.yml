@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nettest: 
+    image: harbor.lnxsystems.com/library/nettest:0.0.1
+    container_name: nettest
+    ports:
+      - 8001:8001
+    networks:
+      - nettest 
+
+networks:
+  nettest: {}
+
+      

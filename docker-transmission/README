@@ -1,0 +1,6 @@
+A rockylinux 8.4 docker base with systemd enabled
+
+In order for systemd to work we need to run docker with --previliged flag as follows:
+
+docker run --rm -itd --privileged -n 
+
