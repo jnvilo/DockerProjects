@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 services:
   nginx: 
     image: harbor.lnxsystems.com/library/frontend:1.19-0.0.1
@@ -10,6 +10,8 @@ services:
       - 443:443
     networks:
       - djprojnet
+      - nettest
+    dns_search: .
 
   django_backend:
     image: harbor.lnxsystems.com/library/django:0.0.1
@@ -17,6 +19,8 @@ services:
     networks:
       - djprojnet
 
+
 networks:
   djprojnet: {}
-
+  nettest: 
+    driver: bridge

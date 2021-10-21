@@ -1,5 +1,5 @@
 .PHONY: build
-REGISTRY_URL=harbor.lnxsystems.com
+REGISTRY_URL=harbor.lab.demostack.xyz
 PROJECT=library
 IMAGE_NAME=frontend
 TAG=1.19-0.0.1

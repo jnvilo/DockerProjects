@@ -1,4 +1,4 @@
-FROM harbor.lnxsystems.com/library/nginx
+FROM harbor.lab.demostack.xyz/library/nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY entrypoint.sh /bin/entrypoint.sh
